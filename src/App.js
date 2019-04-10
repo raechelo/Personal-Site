@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import contactData from './data'
 import Header from './Components/header'
+import ContactContainer from './Components/ContactContainer';
 
 class App extends Component {
   render() {
     return (
       <main className="App">
-        <section className="film">
+        <div className="film">
           <Header />
-        </section>
+          <ContactContainer contactData={contactData}/>
+        </div>
       </main>
     );
   }
