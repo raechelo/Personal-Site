@@ -1,16 +1,37 @@
+.Header {
+  font-family: $fancyfont;
+}
+
 .Header nav {
-  display: inline-flex;
-  justify-content: space-between;
-  left: 0;
-  padding: 1rem 5rem;
-  position: absolute;
-  width: 15rem;
+  display: inline-grid;
+  grid-template-areas: "about projects contact . . . name";
+  padding: 1rem 1rem;
+
+  .nav-abt {
+    grid-area: about;
+  }
+
+  .nav-projects {
+    grid-area: projects;
+  }
+
+  .nav-contact {
+    grid-area: contact;
+  }
+}
+
+.Header a {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: cyan;
+  }
 }
 
 .Header h1 {
+  color: white;
+  display: inline;
+  grid-area: name;
+  font-size: 3.4rem;
   margin:  1rem 0;
-  display: inline-flex;
-  justify-content: space-around;
-  position: absolute;
-  right: 2rem;
 }
