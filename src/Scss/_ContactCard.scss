@@ -1,0 +1,22 @@
+.ContactCard {
+  border: 2px solid magenta;
+  background-color: rgba(255,239,213, .2);
+  grid-area: contact;
+  height: 6rem;
+  display: inline-block;
+  margin: 0 2rem;
+  padding: .5rem;
+  width: 18%;
+
+  img {
+    display: block;
+    margin: auto auto;
+    width: 35%;
+  }
+  a {
+    display: block;
+    font-family: $bodyfont;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
