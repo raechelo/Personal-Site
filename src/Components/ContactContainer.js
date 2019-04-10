@@ -1,17 +1,26 @@
-import React from 'react';
-// import contactData from '../data'
+import React, { Component } from 'react';
 import ContactCard from './ContactCard'
 
-const ContactContainer = (props) => {
-  let data = Object.values(props.contactData)
-  return(
-    <section className="CardContainer">
-      { data.map(c => 
-        // console.log(contactData)
-      <ContactCard name={c.name} img={c.img} link={c.link} />
-      )}
-    </section>
-  )
+class ContactContainer extends Component {
+  constructor(props) {
+    super(props)
+      this.state = {
+
+      }
+  }
+  render() {
+  
+  let data = Object.values(this.props.contactData)
+  
+    return (
+      <body className="ContactContainer">
+      { data.map(c => <ContactCard 
+      img={c.img} 
+      name={c.name} 
+      link={c.link} />) }
+      </body>
+    )
+  }
 }
 
 export default ContactContainer;

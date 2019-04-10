@@ -1,4 +1,4 @@
-const contactData = [{
+const contactData = {
   linkedin: {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/raechelo/',
@@ -19,4 +19,6 @@ const contactData = [{
     link: 'mailto:odom.raechel@gmail.com',
     img: 'http://cdn.onlinewebfonts.com/svg/img_165208.png'
   }
-}]
+}
+
+export default contactData;
