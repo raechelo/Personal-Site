@@ -2,11 +2,11 @@ import React from 'react';
 
 const Header = () => {
   return(
-    <header class="Header">
+    <header className="Header">
       <nav>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
+        <a className="nav-abt" href="#">About</a>
+        <a className="nav-projects" href="#">Projects</a>
+        <a className="nav-contact" href="#">Contact</a>
       </nav>
       <h1>raechel odom.</h1>
     </header>

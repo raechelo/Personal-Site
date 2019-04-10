@@ -4,9 +4,11 @@ import Header from './Components/header'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-      </div>
+      <main className="App">
+        <section className="film">
+          <Header />
+        </section>
+      </main>
     );
   }
 }

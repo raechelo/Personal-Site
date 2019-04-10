@@ -1,4 +1,14 @@
 body {
-  background-image: url('../images/alex-holyoake-60249-unsplash.jpg');
+  margin: 0;
+}
+
+.App {
+  background: url('../images/alex-holyoake-60249-unsplash.jpg') top center no-repeat;
   background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.film {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vh;
 }
