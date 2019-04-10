@@ -8,12 +8,17 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      contactData: []
+      contactData: [],
+      projectData: []
     }
   }
 
   componentDidMount = () => {
-    this.setState( {contactData: Object.values(data)} )
+    // fetch('https://gist.github.com/raechelo/296ac8bb10a6840745f6c89d5ebcf6f9')
+    // .then(res => res.json())
+    // .then(contactData =>console.log(contactData) ) 
+    // .catch(err => { throw new Error(err) } )
+    this.setState( {contactData: Object.values(data.contactData), projectData: Object.values(data.projectData)} )
     console.log(data)
   }
 

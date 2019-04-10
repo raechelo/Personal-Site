@@ -17,7 +17,8 @@ class ContactContainer extends Component {
       { data.map(c => <ContactCard 
       img={c.img} 
       name={c.name} 
-      link={c.link} />) }
+      link={c.link}
+      phrase={c.phrase} />) }
       </body>
     )
   }
