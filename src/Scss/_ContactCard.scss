@@ -1,6 +1,6 @@
 .ContactCard {
-  border: 2px solid magenta;
-  background-color: rgba(255,239,213, .2);
+  border: 2px solid $accent;
+  background-color: $cardbg;
   grid-area: contact;
   height: 6rem;
   display: inline-block;
@@ -14,9 +14,14 @@
     width: 35%;
   }
   a {
+    color: $linkColor;
     display: block;
     font-family: $bodyfont;
     font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
+    &:visited {
+      color: $linkVisited;
+    }
   }
 }
