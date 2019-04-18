@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import data from './data'
-import Header from './Components/header'
-import ContactContainer from './Components/ContactContainer';
-import ProjectContainer from './Components/ProjectContainer';
+import data from '../data'
+import Header from '../Header/header'
+import ContactContainer from '../ContactContainer/ContactContainer';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
 
 class App extends Component {
   constructor() {
@@ -27,7 +27,7 @@ class App extends Component {
       <main className="App">
         <div className="film">
           <Header />
-          <ProjectContainer />
+          <ProjectContainer projectData={this.state.projectData} />
           <ContactContainer contactData={this.state.contactData}/>
         </div>
       </main>

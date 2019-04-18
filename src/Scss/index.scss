@@ -1,5 +1,7 @@
 @import 'Variables';
-@import 'Header';
-@import 'App';
-@import 'ContactCard';
-@import 'ContactContainer';
+@import '../App/App';
+@import '../ContactCard/ContactCard';
+@import '../ContactContainer/ContactContainer';
+@import '../Header/Header';
+@import '../ProjectCard/ProjectCard.scss';
+@import '../ProjectContainer/ProjectContainer.scss';

@@ -1,17 +1,22 @@
 .ContactCard {
-  border: 2px solid $accent;
+  border: 2px solid $linkColor;
   background-color: $cardbg;
+  display: grid;
   grid-area: contact;
+  grid-template-areas: "img"
+  "link";
+  grid-template-rows: 2.5fr 1fr;
   height: 6rem;
-  display: inline-block;
   margin: 0 2rem;
   padding: .5rem;
-  width: 18%;
+  width: 10%;
 
   img {
     display: block;
+    grid-area: img;
     margin: auto auto;
-    width: 35%;
+    min-height: 1rem;
+    width: 25%;
   }
   a {
     color: $linkColor;
@@ -19,6 +24,7 @@
     font-family: $bodyfont;
     font-size: 1.2rem;
     font-weight: bold;
+    grid-area: link;
     text-align: center;
     &:visited {
       color: $linkVisited;
