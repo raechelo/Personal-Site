@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContactCard from './ContactCard'
+import ContactCard from '../ContactCard/ContactCard'
 
 class ContactContainer extends Component {
   constructor(props) {

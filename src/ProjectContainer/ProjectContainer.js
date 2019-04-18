@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import ProjectCard from './ContactCard'
+import ProjectCard from '../ProjectCard/ProjectCard'
 
 class ProjectContainer extends Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class ProjectContainer extends Component {
   
     return (
       <section className="ProjectContainer">
+        <ProjectCard projectData={this.props.projectData} />
       </section>
     )
   }
