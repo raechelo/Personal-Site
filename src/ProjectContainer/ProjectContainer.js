@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ProjectCard from '../ProjectCard/ProjectCard'
+import ProjectCard from '../ProjectCard/ProjectCard';
+import { Route, NavLink } from 'react-router-dom';
 
 class ProjectContainer extends Component {
   constructor(props) {

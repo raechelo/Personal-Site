@@ -18,6 +18,11 @@ const contactData = {
     name: 'Gmail',
     link: 'mailto:odom.raechel@gmail.com',
     img: 'http://cdn.onlinewebfonts.com/svg/img_165208.png',
+  },
+  medium: {
+    name: 'Medium',
+    link: 'https://medium.com/@odom.raechel',
+    img: 'https://cdn.worldvectorlogo.com/logos/medium-1.svg'
   }
 }
 
@@ -59,4 +64,51 @@ const projectData = {
   }
 }
 
-export default { contactData, projectData }
+const logos = [
+  {
+    name: 'HTML',
+    logo: 'https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png'
+  },
+  {
+    name: 'CSS',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg'
+  },
+  {
+    name: 'Sass',
+    logo: 'hhttps://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg'
+  },
+  {
+    name: 'Javascript',
+    logo: 'https://cdn.worldvectorlogo.com/logos/javascript-1.svg'
+  },
+  {
+    name: 'Jquery',
+    logo: 'https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-512.png'
+  },
+  {
+    name: 'Jest',
+    logo: 'https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png'
+  },
+  {
+    name: 'Enzyme',
+    logo: 'https://s.gravatar.com/avatar/a78ef807c3154e902c98d6c3834f0577?size=496&default=retro'
+  },
+  {
+    name: 'Mocha',
+    logo: 'https://cdn.freebiesupply.com/logos/large/2x/mocha-1-logo-png-transparent.png'
+  },
+  {
+    name: 'Chai',
+    logo: 'https://avatars2.githubusercontent.com/u/1515293?s=400&v=4'
+  },
+  {
+    name: 'React',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png'
+  },
+  {
+    name: 'Redux',
+    logo: 'https://cdn-images-1.medium.com/max/1600/1*WcRnU2ERqYHZBKBQ0zXCvg.png'
+  }
+]
+
+export default { contactData, projectData, logos }

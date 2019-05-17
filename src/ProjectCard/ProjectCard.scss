@@ -1,0 +1,44 @@
+.ProjectCard {
+  border-top: 2px solid $accent;
+  display: grid;
+  height: 15rem;
+  grid-template-areas: 
+  "title . img"
+  "summary . img"
+  "stack . img";
+  grid-auto-columns: 2fr .5fr 2fr;
+  margin: 2rem 3rem;
+  padding: 3rem 1rem;
+
+
+  img {
+    grid-area: img;
+    margin: auto;
+    max-height: 12rem;
+    width: 60%;
+  }
+
+  .project-title {
+    color: white;
+    font-family: $fancyfont;
+    font-size: 2rem;
+    grid-area: title;
+  }
+
+  .project-stack {
+    grid-area: stack;
+    font-family: $bodyfont;
+  }
+
+  .project-summary {
+    color: $summary;
+    grid-area: summary;
+    font-family: $bodyfont;
+  }
+
+  .stack-logo {
+    margin: 0 .5rem;
+    min-width: 6%;
+    width: 6%;
+  }
+}

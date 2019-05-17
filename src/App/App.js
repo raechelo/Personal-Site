@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import data from '../data'
-import Header from '../Header/header'
+import Header from '../Header/header';
+import { Route } from 'react-router-dom';
 import ContactContainer from '../ContactContainer/ContactContainer';
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
+import About from '../About/About';
+import SkillsContainer from '../SkillsContainer/SkillsContainer';
 
 class App extends Component {
   constructor() {
@@ -19,17 +22,18 @@ class App extends Component {
     // .then(contactData =>console.log(contactData) ) 
     // .catch(err => { throw new Error(err) } )
     this.setState( {contactData: Object.values(data.contactData), projectData: Object.values(data.projectData)} )
-    console.log(data)
   }
 
   render() {
     return (
       <main className="App">
-        <div className="film">
+      <Route path ='/' component={App} />
+      <Route path ='/about' component={About} />
+      <Route path ='/skills' component={SkillsContainer} />
+      <Route path ='/projects' component={ProjectContainer} />
+      <Route path ='/contact' component={ContactContainer} />
           <Header />
-          <ProjectContainer projectData={this.state.projectData} />
-          <ContactContainer contactData={this.state.contactData}/>
-        </div>
+          {/* <ContactContainer contactData={this.state.contactData}/> */}
       </main>
     );
   }
