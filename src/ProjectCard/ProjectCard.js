@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
 
 export default class ProjectCard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
 
   render () {
     let cards = this.props.projectData.map(d => {
       return (
-        <article>
-        <h4>{d.name}</h4>
-        <p>{d.summary}</p>
-        {d.stack.join(' ')}
-        <img src={d.imgLink} />
+        <article className="ProjectCard">
+        <h4 className="project-title">{d.name}</h4>
+        <p className="project-summary">{d.summary}</p>
+        <img src={d.imgLink} className="project-img" />
       </article>
       )
     })
